@@ -3,11 +3,11 @@ pipeline {
     environment {
         AWS_ACCESS_KEY_ID = credentials('jenkins-access-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-secret-access-key')
-        AWS_S3_BUCKET = "enok"
+        AWS_S3_BUCKET = "ra-mavan"
         ARTIFACT_NAME = "spring-boot.jar"
-        AWS_EB_APP_NAME = "enok"
+        AWS_EB_APP_NAME = "ra-mvn"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "Enok-env"
+        AWS_EB_ENVIRONMENT = "Ramvn-env"
     }
     stages {
         stage('Validate') {
